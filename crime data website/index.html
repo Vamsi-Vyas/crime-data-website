@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime Data Analysis Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="hero-header">
+    <div class="hero-left">
+        <h1>Crime Data Analysis Portal</h1>
+        <p>
+            Interactive visualization and analytics of crime statistics to support
+            awareness and data-driven decision making.
+        </p>
+        <button onclick="showDashboard()">View Dashboard</button>
+    </div>
+
+    <div class="hero-right">
+        <!-- Optional: placeholder for dashboard image or icon -->
+        <div class="hero-visual">
+            Data • Trends • Insights
+        </div>
+    </div>
+</header>
+
+<div class="layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <a href="#about">About</a>
+        <a href="#dataset">Dataset</a>
+        <a href="#dashboard" onclick="showDashboard()">Dashboard</a>
+        <a href="#insights">Insights</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#future">Future</a>
+        <a href="#contact">Contact</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- ALL YOUR SECTIONS STAY AS THEY ARE -->
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About the Project</h2>
+    <p>
+        The <strong>Crime Data Analysis Portal</strong> is a data-driven web application designed to
+        visualize and analyze crime patterns using interactive dashboards.
+        The project aims to help users understand trends, distributions, and variations
+        in crime data across different regions and time periods.
+    </p>
+
+    <p>
+        Instead of static reports, this platform leverages modern data visualization
+        techniques to present insights in an intuitive and user-friendly manner.
+        Users can explore crime statistics dynamically and focus on the information
+        that is most relevant to them.
+    </p>
+
+    <p>
+        This project is developed for academic and analytical purposes and demonstrates
+        the integration of data analytics tools with web technologies to support
+        informed decision-making and public awareness.
+    </p>
+</section>
+
+
+<!-- DATASET -->
+<section id="dataset" class="section">
+    <h2>Dataset Source</h2>
+    <p>
+        The dataset used in this project is sourced from <strong>Kaggle</strong>, a widely used
+        open-data platform for data science and analytics.
+        The dataset contains structured crime records, including attributes such as
+        crime type, location, and year.
+    </p>
+
+    <p>
+        Kaggle datasets are commonly used for academic projects, research, and analytical
+        modeling. The data has been cleaned and processed before visualization to ensure
+        clarity, accuracy, and meaningful insights.
+    </p>
+</section>
+
+<!-- DASHBOARD (HIDDEN INITIALLY) -->
+<section id="dashboard" class="section dashboard hidden">
+    <h2>Crime Analysis Dashboard</h2>
+
+    <iframe
+      src="https://public.tableau.com/views/Crime_Dashboard_17698349969620/CRIMEDATAANALYSISDASHBOARD?:showVizHome=no"
+      width="100%"
+      height="900"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+</section>
+
+<!--Insight section-->
+<section id="insights" class="section">
+    <h2>Key Insights</h2>
+
+    <ul class="insights-list">
+        <li>
+            <strong>Crime Trends Over Time:</strong>
+            The dashboard reveals noticeable variations in crime rates across different years,
+            highlighting periods of increase and decline that may correlate with social,
+            economic, or policy changes.
+        </li>
+
+        <li>
+            <strong>Regional Crime Distribution:</strong>
+            Certain regions consistently report higher crime rates compared to others,
+            indicating the need for region-specific crime prevention strategies.
+        </li>
+
+        <li>
+            <strong>Crime Type Analysis:</strong>
+            Some categories of crime occur more frequently than others,
+            showing patterns that can assist in prioritizing law enforcement and awareness efforts.
+        </li>
+
+        <li>
+            <strong>Comparative Insights:</strong>
+            Comparing states or districts side by side helps identify outliers and
+            understand how crime patterns differ geographically.
+        </li>
+
+        <li>
+            <strong>Data-Driven Decision Support:</strong>
+            Interactive filters enable users to explore the data from multiple perspectives,
+            supporting informed analysis rather than assumptions.
+        </li>
+    </ul>
+</section>
+
+<!--Objectives-->
+<section id="objectives" class="section">
+    <h2>Objectives & Scope</h2>
+
+    <h3>Project Objectives</h3>
+    <ul class="insights-list">
+        <li>
+            To analyze crime data using interactive visualizations and identify
+            meaningful patterns across regions and time periods.
+        </li>
+        <li>
+            To provide users with an intuitive platform for exploring crime statistics
+            without requiring technical expertise.
+        </li>
+        <li>
+            To demonstrate the integration of data analytics tools (Tableau)
+            with web technologies.
+        </li>
+        <li>
+            To support data-driven understanding and awareness through visual insights.
+        </li>
+    </ul>
+
+    <h3>Project Scope</h3>
+    <ul class="insights-list">
+        <li>
+            The project focuses on analyzing historical crime data obtained from Kaggle.
+        </li>
+        <li>
+            The analysis is limited to the attributes available in the dataset,
+            such as region, crime category, and year.
+        </li>
+        <li>
+            The platform is designed for academic and analytical purposes
+            and does not provide real-time crime monitoring.
+        </li>
+    </ul>
+</section>
+
+<!--future section-->
+<section id="future" class="section">
+    <h2>Future Enhancements</h2>
+
+    <ul class="insights-list">
+        <li>
+            Integration of a backend system to enable dynamic data filtering
+            and real-time updates.
+        </li>
+        <li>
+            Expansion of the dataset to include recent and real-time crime records.
+        </li>
+        <li>
+            Implementation of user authentication to provide role-based access
+            to detailed dashboards.
+        </li>
+        <li>
+            Incorporation of advanced analytics such as predictive modeling
+            to forecast crime trends.
+        </li>
+        <li>
+            Enhancement of the user interface with responsive design
+            for improved accessibility across devices.
+        </li>
+    </ul>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>For academic or analytical purposes, contact the project owner.</p>
+</section>
+
+<footer>
+    <p>© 2026 Crime Data Analysis Project</p>
+</footer>
+
+<script src="script.js"></script>
+    </main>
+</div>
+
+</body>
+</html>
